@@ -4,12 +4,16 @@
         <title>隐私政策</title>
         <style type="text/css">
             table {
+                width: "1200px";
                 border:1px solid black;
                 border-collapse: collapse;
+                table-layout: fixed;
             }
 
             tr,th,td {
                 border:1px solid black;
+                word-break: break-all;
+                font-size: smaller;
             }
         </style>
     </head>
@@ -39,60 +43,74 @@
                 <th colspan="4">Android应用权限申请与使用情况</th>
 
                 <tr>
-                    <th>权限名称</th>
-                    <th>权限功能说明</th>
-                    <th>使用场景或目的</th>
-                    <th>拒绝提供的影响</th>
+                    <th  rowspan="1" colspan="1" style="width:100px">权限名称</th>
+                    <th  rowspan="1" colspan="1" style="width:100px">权限功能说明</th>
+                    <th  rowspan="1" colspan="1" style="width:500px">使用场景或目的</th>
+                    <th  rowspan="1" colspan="1" style="width:500px">拒绝提供的影响</th>
                 </tr>
             </thead>
             <tbody>
                 <tr>
-                    <td>READ_PHONE_STATE</td>
-                    <td>读取电话状态(设备 IMSI/IMEI 号)</td>
-                    <td>提供读取手机设备标识等信息，请您放心该权限无法监听、获取您的任何通话内容与信息；保障软件服务的安全运营及效率、完成广告和信息的推送和统计</td>
-                    <td>可能导致无法保障产品的安全运营功能</td>
+                    <td  rowspan="1" colspan="1" style="width:100px ; overflow: auto;">
+                        <p>READ_PHONE_STATE</p>
+                    </td>
+                    <td  rowspan="1" colspan="1" style="width:100px">读取电话状态(设备 IMSI/IMEI 号)</td>
+                    <td  rowspan="1" colspan="1" style="width:500px">提供读取手机设备标识等信息，请您放心该权限无法监听、获取您的任何通话内容与信息；保障软件服务的安全运营及效率、完成广告和信息的推送和统计</td>
+                    <td  rowspan="1" colspan="1" style="width:300px">可能导致无法保障产品的安全运营功能</td>
                 </tr>
 
                 <tr>
-                    <td>BODY_SENSORS</td>
-                    <td>传感器</td>
-                    <td>调用系统的传感器数据，获取手机外部状态</td>
-                    <td>可能导致无法正常使用第三方SDK提供的功能</td>
+                    <td  rowspan="1" colspan="1" style="width:100px">
+                        <p>BODY_SENSORS</p>
+                    </td>
+                    <td  rowspan="1" colspan="1" style="width:100px">传感器</td>
+                    <td  rowspan="1" colspan="1" style="width:500px">调用系统的传感器数据，获取手机外部状态</td>
+                    <td  rowspan="1" colspan="1" style="width:300px">可能导致无法正常使用第三方SDK提供的功能</td>
                 </tr>
 
                 <tr>
-                    <td>WRITE_EXTERNAL_STORAGE</td>
-                    <td>允许应用程序写入外部存储</td>
-                    <td>应用下载广告投放及广告素材存储</td>
-                    <td>可能导致广告无法顺利加载</td>
+                    <td  rowspan="1" colspan="1" style="width:100px">
+                        <p>WRITE_EXTERNAL_STORAGE</p>
+                    </td>
+                    <td  rowspan="1" colspan="1" style="width:100px">允许应用程序写入外部存储</td>
+                    <td  rowspan="1" colspan="1" style="width:500px">应用下载广告投放及广告素材存储</td>
+                    <td  rowspan="1" colspan="1" style="width:300px">可能导致广告无法顺利加载</td>
                 </tr>
 
                 <tr>
-                    <td>READ_EXTERNAL_STORAGE</td>
-                    <td>允许应用程序读取外部存储</td>
-                    <td>应用下载广告投放及广告素材存储</td>
-                    <td>可能导致广告无法顺利加载</td>
+                    <td  rowspan="1" colspan="1" style="width:100px">
+                        <p>READ_EXTERNAL_STORAGE</p>
+                    </td>
+                    <td  rowspan="1" colspan="1" style="width:100px">允许应用程序读取外部存储</td>
+                    <td  rowspan="1" colspan="1" style="width:500px">应用下载广告投放及广告素材存储</td>
+                    <td  rowspan="1" colspan="1" style="width:300px">可能导致广告无法顺利加载</td>
                 </tr>
 
                 <tr>
-                    <td>QUERY_ALL_PACKAGES</td>
-                    <td>获取应用软件列表</td>
-                    <td>广告投放、反作弊</td>
-                    <td>可能导致广告无法顺利加载播放</td>
+                    <td  rowspan="1" colspan="1" style="width:100px">
+                        <p>QUERY_ALL_PACKAGES</p>
+                    </td>
+                    <td  rowspan="1" colspan="1" style="width:100px">获取应用软件列表</td>
+                    <td  rowspan="1" colspan="1" style="width:500px">广告投放、反作弊</td>
+                    <td  rowspan="1" colspan="1" style="width:300px">可能导致广告无法顺利加载播放</td>
                 </tr>
 
                 <tr>
-                    <td>REQUEST_INSTALL_PACKAGES</td>
-                    <td>未知来源安装权限</td>
-                    <td>来自穿山甲SDK带来的应用下载</td>
-                    <td>无法顺利通过穿山甲广告SDK跳转下载其他应用</td>
+                    <td  rowspan="1" colspan="1" style="width:100px ; overflow-x:scroll;">
+                        <p>REQUEST_INSTALL_PACKAGES</p>
+                    </td>
+                    <td  rowspan="1" colspan="1" style="width:100px">未知来源安装权限</td>
+                    <td  rowspan="1" colspan="1" style="width:500px">来自穿山甲SDK带来的应用下载</td>
+                    <td  rowspan="1" colspan="1" style="width:300px">无法顺利通过穿山甲广告SDK跳转下载其他应用</td>
                 </tr>
 
                 <tr>
-                    <td>WAKE_LOCK</td>
-                    <td>保持手机唤醒</td>
-                    <td>保证广告的顺利播放</td>
-                    <td>视频相关的广告可能会黑屏</td>
+                    <td  rowspan="1" colspan="1" style="width:100px">
+                        <p>WAKE_LOCK</p>
+                    </td>
+                    <td  rowspan="1" colspan="1" style="width:100px">保持手机唤醒</td>
+                    <td  rowspan="1" colspan="1" style="width:500px">保证广告的顺利播放</td>
+                    <td  rowspan="1" colspan="1" style="width:300px">视频相关的广告可能会黑屏</td>
                 </tr>
             </tbody>
         </table>
